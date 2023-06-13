@@ -1,0 +1,53 @@
+Benjamin Ng
+Assignment 5
+Design Information:
+
+1. As a user of the system I want to be able to see each store's offering and the amount of
+product in stock by square feet.
+
+To realize this requirement, I used a FloorStore class with a listProducts() method to display all products and a getProductStock() method to show the stock quantity of a product.
+
+2. The application must allow employees to add new products to the system. As well as delete and edit them.
+
+To realize this requirement, I added a Employee class with addProduct(), editProduct(), and deleteProduct() method for managing products in the store.
+
+3. Different categories of the floors: tile, stone, laminate, woodfloor, and vinyl.
+
+To realize this requirement, I added a FloorCategory class representing the different categories of floors. 
+The Floor class has a one-to-one relationship with the FloorCategory class.
+
+4. The application must contain a database of the floors.
+
+To realize this requirement, I added a Floor class with attributes such as productID, name, quantity, and price. This class would store floor products and their information.
+
+5. Users must be able to search for products by picking from a hierarchical list, where the first level is the floor category, and the second level is the floor type.
+
+To realize this requirement, I added a searchbyCategory method to Floor class that would allow users to search for a product based on their category in a hierachical list.
+
+6. Users must also be able to specify an item by typing its name (search functionality).
+
+To realize this, I added a searchbyName method to Floor class that would allow users to search for a product by their name.
+
+7. All floors regardless of their category have an associated color, size, brand, type, and price.
+
+To realize this requirement, I added a FloorAttributes class containing their size, color, brand, and price.
+
+8. Categories tile and stone have different materials they are made of, e.g., Tile - porcelain, ceramic, resin; Stone - marble, pebble, slate.
+
+To realize this requirement, I created subclasses of different materials such as tile and stone.
+Floor class has one-to-one relationship with FloorAttributes.
+
+
+9. Wood floors have both a type (solid, engineered, bamboo, etc.) and species (oak, hickory, maple, etc.).
+
+To realize this requirement, I added a the WoodFloor subclass from FloorType with type and species attribute.
+
+
+10. Laminate can be regular laminate or water-resistant, whereas vinyl can be water-resistant or waterproof.
+
+To realize this requirement, I added a laminate subclass from FloorType with a waterResistance attribute. 
+The Vinyl subclass from FloorType contains a waterproof attribute.
+
+11. The User Interface (UI) must be intuitive and responsive.
+
+It's not considered at the moment because it doesn't affect the design directly.

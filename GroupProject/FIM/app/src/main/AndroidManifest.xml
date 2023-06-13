@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FIM"
+        tools:targetApi="31">
+        <activity
+            android:name=".browseChoice"
+            android:exported="false" />
+        <activity
+            android:name=".searchByHiearchy"
+            android:exported="false" />
+        <activity
+            android:name=".deleteProductFromDatabase2"
+            android:exported="false" />
+        <activity
+            android:name=".DeleteProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddLaminateDetails"
+            android:exported="false" />
+        <activity
+            android:name=".AddVinylDetails"
+            android:exported="false" />
+        <activity
+            android:name=".AddStoneDetails"
+            android:exported="false" />
+        <activity
+            android:name=".AddWoodDetails"
+            android:exported="false" />
+        <activity
+            android:name=".AddRestOfTileDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TileMaterialPickerActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".CategorySelection2"
+            android:exported="false" />
+        <activity
+            android:name=".testActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProductsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WoodSpeciesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WoodTypeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EmployeeAddProduct"
+            android:exported="false" />
+        <activity
+            android:name=".EmployeeModifyInventory"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EmployeeLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeScreenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
